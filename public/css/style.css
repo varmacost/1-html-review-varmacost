@@ -1,0 +1,97 @@
+img {
+    border-radius: 50%;
+  } 
+body {background-color: black;
+}
+.nav bar{border: 1px solid white;
+    background-color: white;
+    color: white;
+    text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkgrey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aqua;
+  background-color: transparent;
+}
+h1 {
+    color: white;
+}
+h3 {
+    color: white;
+    font-size: 16px;
+}
+th {
+    color:white;
+}
+td {
+    color:white;
+}
+tbody {
+    color: white;
+}
+form {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+table {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 550px;
+  margin-left: 00px;
+}
+p {
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+    text-align: center;
+}
+center {
+    color: white;
+}
+
+/*
+https://www.w3schools.com/howto/howto_css_rounded_images.asp
+https://www.w3schools.com/css/css_howto.asp
+https://www.w3schools.com/css/css_navbar_horizontal.asp
+https://www.google.com/search?q=books+images&rlz=1C5CHFA_enUS879US880&tbm=isch&source=iu&ictx=1&fir=-HMv_6w_SGUy1M%252CnBiD9BWYMB87aM%252C_&vet=1&usg=AI4_-kSS5qPWkgO9hek-ZBXhGntHyNyoQg&sa=X&ved=2ahUKEwjpjYjDo-PyAhWBK80KHWIdDhYQ9QF6BAgFEAE&biw=1218&bih=689#imgrc=-HMv_6w_SGUy1M
+*/
+
