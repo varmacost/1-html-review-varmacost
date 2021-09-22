@@ -11,7 +11,42 @@ document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() =
         .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
         .forEach(tr => table.appendChild(tr) );
 })));
+const SomeApp = {
+    data() {
+      return {
+        result: {},
+        list: [5,6,7,8],
+        message: "Waiting ..."
+      }
+    },
+    computed: {
+        prettyBirthday() {
+            return dayjs(this.result.dob.date)
+            .format('D MMM YYYY')
+        }
+    },
+    methods: {
+        fetchUserData() {
+            //Method 1:
+            fetch('https://randomuser.me/api/')
+            .then(response => response.json())
+            .then((json) => {
+                console.log("Got json back:", json);
+                this.result = json.results[0];
+                console.log("C");
+            })
+            .catch( (error) => {
+                console.error(error);
+            });
+        }
+    },
+    created() {
+        this.fetchUserData();
+    }
 
+  }
+  
+  Vue.createApp(SomeApp).mount('#someApp');
 
 // Source: file:///Users/a/Documents/GitHub/2-using-vue-js-varmacos/app/public/books.html#
 // const Offer = {
