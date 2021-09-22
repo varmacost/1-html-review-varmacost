@@ -22,4 +22,27 @@ const Offer = {
         }
     }
 }
-Vue.createApp(Counter).mount('#classtest')
+async mounted() {
+
+    fetch('https://randomuser.me/api/', {
+    })
+    .then(response => response.json())
+    .then((responseJson) => {
+        console.log(responseJson);
+        this.result = responseJson.results[0];
+        this.message = this.result.name;
+    }
+    .catch( (error) => {
+        this.message = error;
+        console.error(error);
+    });
+    {
+        data() { /*...*/ },
+        computed: {}, // <-- NEW
+        methods: {}, // <-- NEW
+        created() { /*...*/ }
+      }
+
+    // Source: https://github.com/tag/msis-lesson-plan-2020/blob/master/06%20HTTP%20and%20VueJS%20II.md
+
+}

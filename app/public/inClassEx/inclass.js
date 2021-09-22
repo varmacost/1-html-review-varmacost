@@ -22,6 +22,11 @@ const Offer = {
             ]
         }
     }
+    computed: {
+        prettyBirthday() {
+            return 
+        }
+    }
 }
 Vue.createApp(Counter).mount('#classtest')
 created() {
@@ -37,4 +42,8 @@ created() {
     .catch((error) ==>{
         console.error(error)
     })
+}
+method:
+created() {
+
 }
